@@ -9,11 +9,5 @@
       "matches": ["https://driverpracticaltest.dvsa.gov.uk/manage?execution=*"],
       "js": ["script.js"]
     }
-  ],
-  "web_accessible_resources": [
-    {
-      "resources": ["assets/success.mp3", "assets/warning.mp3"],
-      "matches": ["https://driverpracticaltest.dvsa.gov.uk/*"]
-    }
   ]
 }

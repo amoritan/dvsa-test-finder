@@ -1,5 +1,5 @@
-const successAudio = new Audio('./assets/success.mp3');
-const warningAudio = new Audio('./assets/warning.mp3');
+const successAudio = new Audio('https://github.com/amoritan/dvsa-test-finder/raw/main/assets/success.mp3');
+const warningAudio = new Audio('https://github.com/amoritan/dvsa-test-finder/raw/main/assets/warning.mp3');
 
 const submitButton = document.getElementById('test-centres-submit');
 
