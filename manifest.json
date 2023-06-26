@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "DVSA Test Finder",
+  "version": "0.1",
+  "description": "Automatically refreshes DVSA's web application",
+  "content_scripts": [
+    {
+      "resources": ["assets/success.mp3", "assets/warning.mp3"],
+      "matches": ["https://driverpracticaltest.dvsa.gov.uk/manage?execution=*"],
+      "js": ["script.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/success.mp3", "assets/warning.mp3"],
+      "matches": ["https://driverpracticaltest.dvsa.gov.uk/*"]
+    }
+  ]
+}
