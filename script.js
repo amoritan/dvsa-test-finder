@@ -31,8 +31,8 @@ if (submitButton) {
     }
   });
   if (testCentresAvailable.length > 0) {
-    alert(`🎉 Available test centre/s found: ${testCentresAvailable.join(', ')}`);
     successAudio.play();
+    alert(`🎉 Available test centre/s found: ${testCentresAvailable.join(', ')}`);
   } else {
     console.log('😢 No available test centres were found');
     window.setTimeout(
@@ -41,8 +41,8 @@ if (submitButton) {
     );
   }
 } else if (document.getElementById('main-iframe')) {
-  alert('🛑 The website requires your attention');
   warningAudio.play();
+  alert('🛑 The website requires your attention');
 } else {
-  console.warn('🔍 Not on the right page yet...');
+  console.log('🔍 Not on the right page yet...');
 }
