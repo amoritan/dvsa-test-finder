@@ -1,13 +1,18 @@
 {
   "manifest_version": 3,
   "name": "DVSA Test Finder",
-  "version": "0.1",
-  "description": "Automatically refreshes DVSA's web application",
+  "version": "0.0.1",
+  "description": "Web browser extension that automatically refreshes DVSA’s website to find available test dates",
   "content_scripts": [
     {
-      "resources": ["assets/success.mp3", "assets/warning.mp3"],
       "matches": ["https://driverpracticaltest.dvsa.gov.uk/manage?execution=*"],
       "js": ["script.js"]
     }
-  ]
+  ],
+  "icons": {
+    "16": "assets/icon-16.png",
+    "32": "assets/icon-32.png",
+    "48": "assets/icon-48.png",
+    "128": "assets/icon-128.png"
+  }
 }
